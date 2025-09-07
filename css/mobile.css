@@ -1,3 +1,40 @@
+@media (min-width: 2500px) {
+    body {
+        cursor: none;
+    }
+
+    .logo{
+        font-size: 42px;
+    }
+
+    h1{
+        font-size: 60px;
+    }
+
+    .swiper {
+        width: 2560px;
+        padding-top: 30px;
+        padding-bottom: 35px !important;
+    }
+
+    .swiper-slide img {
+        height: 720px;
+        width: 100%;
+    }
+
+    .slide-name {
+        font-size: 36px;
+    }
+
+    .swiper-slide::before {
+        display: none;
+    }
+
+    .slide-name {
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
     body {
         cursor: none;
