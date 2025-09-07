@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+body {
+    margin: 0;
+    padding: 40px 0 100px;
+
+    background-color: #284b59;
+    background-image: radial-gradient(circle,
+            rgb(44, 83, 100),
+            rgb(32, 58, 67),
+            rgb(15, 32, 39));
+
+    font-family: Manrope, sans-serif;
+}
+
+
+
+.logo {
+    margin-bottom: 30px;
+}
+
+.logo_title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #77b8c2;
+    letter-spacing: 0.02em;
+}
+
+.logo_desc {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    color: #77b8c2;
+}
+
+h1 {
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    color: #fff;
+}
+
+/* Swiper styles */
+
+:root {
+    --swiper-pagination-bottom: 0px;
+}
+
+.swiper {
+    margin: 0 auto;
+    width: 1024px;
+    padding-bottom: 50px !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 360px;
+    border-radius: 20px;
+
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.swiper-slide::before {
+    opacity: 0;
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2)0%, #000 100%);
+    transition: all 0.2s ease-in;
+}
+
+.slide-name {
+    opacity: 0;
+
+    position: absolute;
+   
+
+    bottom: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: var(--font-accent);
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+
+    transition: all 0.2s ease-in;
+}
+
+.swiper-slide:hover .slide-name {
+    opacity: 1;
+    top: 50%;
+}
+
+.swiper-slide:hover::before {
+    opacity: 1;
+}
+
+.no-select {
+    -webkit-user-select: none;
+    /* Chrome/Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE/Edge */
+    user-select: none;
+    /* Стандартный синтаксис */
+}
