@@ -24,8 +24,34 @@
     .slide-name {
         display: none;
     }
+}
 
+@media (max-width: 460px) {
+    body {
+        cursor: none;
+        padding: 40px 0 60px;
+    }
 
+    .swiper {
+        width: 425px;
+        padding-bottom: 25px !important;
+    }
+
+    .swiper-slide img {
+        height: 144px;
+    }
+
+    .slide-name {
+        font-size: 16px;
+    }
+
+    .swiper-slide::before {
+        display: none;
+    }
+
+    .slide-name {
+        display: none;
+    }
 }
 
 @media (max-width: 320px) {
